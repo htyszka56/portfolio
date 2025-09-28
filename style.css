@@ -47,6 +47,36 @@ section {
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
+/*add status marker for projects*/
+.project {
+  position: relative; /* so the status marker can be positioned inside */
+  background: white;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.status {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.status.complete {
+  background-color: #28a745; /* green */
+}
+
+.status.in-progress {
+  background-color: #ffc107; /* amber/yellow */
+  color: #333; /* darker text for readability */
+}
+
 footer {
   text-align: center;
   padding: 1rem;
